@@ -354,10 +354,10 @@ footer {
       }
     }
   .mail::before {
-    background-position: -1px 0px;
     content: "";
     background: $sprite;
     position: absolute;
+    background-position: -1px 0px;
     display: block;
     height: 37px;
     width: 36px;
@@ -375,13 +375,13 @@ footer {
     height: 36px;
     }
   .phone::before {
-    background-position: -107px 0px;
     content: "";
     background: $sprite;
+    background-position: -107px 0px;
     position: absolute;
     display: block;
     height: 37px;
-    width: 35px;
+    width: 36px;
     left: -43px;
     top: -4px;
     }
@@ -402,5 +402,28 @@ footer {
 #behance {
   &:hover::before {
     background-position: -71px -38px;
+  }
+}
+
+#mail {
+  width: 122px;
+  &:hover::before {
+    background-position: -1px -36px;
+  }
+}
+#phone::before {
+    content: "";
+    background: $sprite;
+    position: absolute;
+    background-position: -107px 0px;
+    display: block;
+    height: 37px;
+    width: 36px;
+    left: -43px;
+    top: -4px;
+}
+#phone {
+  &:hover::before {
+    background-position: -107px -36px;
   }
 }
